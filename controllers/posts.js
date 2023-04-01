@@ -53,7 +53,7 @@ const getPost = async (req, res) => {
 
 const createPost = async (req, res) => {
   const post = req.body;
-  console.log(post);
+
   const newPost = new PostMessage({
     ...post,
     creator: req.userId,
